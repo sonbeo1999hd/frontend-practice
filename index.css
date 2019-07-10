@@ -5,6 +5,7 @@
 body{
     font-family: 'Raleway';
     margin: 0px auto;
+    /* line-height: 66pt; */
 }
 
 .rong{
@@ -91,6 +92,7 @@ body{
     flex-basis: 50%;
     margin: 162px 57px;
     color: #fff;
+    line-height: 20pt;
 }
 
 .group2 .img-right {
@@ -109,6 +111,7 @@ body{
 .group3 .col{
     flex-basis: 20%;
     padding-top: 71px;
+    line-height: 20pt;
 }
 .group3 .col .icon, .group3 .col h3{
     padding-bottom: 30px;
@@ -160,6 +163,7 @@ body{
     padding-top: 50px;
     text-align: center;
     color: #304751;
+    line-height: 15pt;
 }
 .food .info-food h4 {
     text-transform: uppercase;
@@ -182,6 +186,7 @@ body{
     text-align: center;
     padding-top: 60px;
     color:#2a3b40;
+    line-height: 20pt;
 }
 .group5 .text h3{
     font-size: 26px;
@@ -250,6 +255,8 @@ body{
     padding: 20px;
     border-radius: 50%;
     background: #fff;
+    width: 100px;
+    height: 50px;
 }
 .group6 .col .one-col .icon img{
     width: 41px;
@@ -257,6 +264,7 @@ body{
 }
 .group6 .col .one-col .info-food2{
     margin-left: 10px;
+    line-height: 15pt;
 }
 .group6 .col .one-col .info-food2 h4{
     text-transform: uppercase;
@@ -283,10 +291,11 @@ body{
 }
 .group7 .input .col select, .group7 .input .col input{
     width: 200px;
-    height: 30px;
+    /* height: 30px; */
     margin: 0px 0px 30px 0px;
     border-radius: 10px;
     padding-left: 10px;
+    padding: 8px;
 }
 .group7 .input .col p{
     margin-bottom: 5px;
@@ -331,6 +340,7 @@ body{
     background: #fff;
     padding: 20px 20px 40px 20px;
     color: #555555;
+    line-height: 15pt;
 }
 .group9 .col .col-1 .text-bottom p{
     width: 215px;
@@ -363,6 +373,7 @@ body{
     /* height: 341px; */
     color: white;
     padding-bottom: 30px;
+    line-height: 20pt;
 }
 .group10 .text{
     padding: 0px 200px;
@@ -414,6 +425,7 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     width: 400px;
+    line-height: 20pt;
 }
 .group11 .col1{
     margin-right: 100px;
