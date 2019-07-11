@@ -13,7 +13,7 @@
 }
 @font-face{
     src: url(fonts/cookie/Cookie-Regular.ttf);
-    font-family: 'Cookie';
+    font-family: 'Cookie Regular';
 }
 @font-face{
     src: url(fonts/raleway/Raleway-Regular.ttf);
@@ -257,7 +257,7 @@ body{
     padding: 30px;
 }
 .group6 .text .title p{
-    font-family: 'cookie regular';
+    font-family: 'Cookie Regular';
     font-size: 70px;
 }
 .group6 .text .title h3{
@@ -308,7 +308,7 @@ body{
 }
 .group7 .book-food .title{
     text-align: center;
-    font-family: 'cookie regular';
+    font-family: 'Cookie Regular';
     font-size: 70px;
     padding-top: 20px;
 }
@@ -342,7 +342,7 @@ body{
     padding: 30px;
 }
 .group9 .title p{
-    font-family: 'cookie regular';
+    font-family: 'Cookie Regular';
     font-size: 70px;
 }
 .group9 .title h3{
