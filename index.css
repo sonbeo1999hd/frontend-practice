@@ -2,6 +2,15 @@
     padding: 0px;
     margin: 0px;
 }
+
+.group1 .text button:hover {
+    background: blue;
+    color: white;
+}
+
+.group5 .img {
+    position: absolute;
+}
 @font-face{
     src: url(fonts/cookie/Cookie-Regular.ttf);
     font-family: 'Cookie';
@@ -187,7 +196,7 @@ body{
     margin: 30px auto;
 }
 
-.group5{background: #d4d8d9;/* height: 375px; */padding-bottom: 30px;}
+.group5{background: #d4d8d9;height: 345px;padding-bottom: 30px;position: relative;}
 .group5 .img img{
     position: absolute;
     height: 375px;
@@ -201,6 +210,8 @@ body{
     padding-top: 60px;
     color:#2a3b40;
     line-height: 20pt;
+    padding-left: 300px;
+    position: absolute;
 }
 .group5 .text h3{
     font-size: 26px;
@@ -216,7 +227,7 @@ body{
     display: inline-block;
 }
 .group5 .text .nav{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .group5 .text .nav li{
     margin-left: 50px;
@@ -226,7 +237,9 @@ body{
     color: black;
     font-weight: bold;
 }
-
+.group5 .text ul li a:hover{
+    color:red;
+}
 .group6{
     background: url(images/img10.png) no-repeat;
     height: 841px;
