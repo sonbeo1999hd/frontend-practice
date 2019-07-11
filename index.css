@@ -2,6 +2,19 @@
     padding: 0px;
     margin: 0px;
 }
+@font-face{
+    src: url(fonts/cookie/Cookie-Regular.ttf);
+    font-family: 'Cookie';
+}
+@font-face{
+    src: url(fonts/raleway/Raleway-Regular.ttf);
+    font-family: 'Raleway';
+
+}
+@font-face{
+    src: url(fonts/raleway/Raleway-Bold.ttf);
+    font-family: 'Raleway Bold';
+}
 body{
     font-family: 'Raleway';
     margin: 0px auto;
