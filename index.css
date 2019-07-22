@@ -49,14 +49,15 @@ body{
     padding-top: 63px;
     padding-left: 200px;
     padding-right: 200px;
+    transition: 0.5s ease-in-out;    
 }
 
 .group1 .nav li {
     display: inline-block;
 }
 
-.group1 .nav .right {
-    float: right;
+.group1 .nav li:first-child{
+    margin-right: 250px;
 }
 
 .group1 ul li a {
@@ -221,7 +222,15 @@ body{
     margin: 50px auto;
 }
 .group5 .text .icon{
-    font-size: 25px;
+    font-size: 30px;
+    cursor: pointer;
+    
+}
+.active, .group5 .text .icon i:hover{
+    color: #c7061f;
+}
+.group5 .icon i{
+    transition: color 0.6s ease;
 }
 .group5 .text ul li{
     display: inline-block;
@@ -240,6 +249,10 @@ body{
 .group5 .text ul li a:hover{
     color:red;
 }
+.group5 .mySlides{
+    display: none;
+}
+
 .group6{
     background: url(images/img10.png) no-repeat;
     height: 841px;
@@ -283,7 +296,7 @@ body{
     border-radius: 50%;
     background: #fff;
     width: 100px;
-    height: 50px;
+    height: 45px;
 }
 .group6 .col .one-col .icon img{
     width: 41px;
@@ -311,6 +324,7 @@ body{
     font-family: 'Cookie Regular';
     font-size: 70px;
     padding-top: 20px;
+    padding-bottom: 30px;
 }
 .group7 .input{
     display: flex;
@@ -323,6 +337,7 @@ body{
     border-radius: 10px;
     padding-left: 10px;
     padding: 8px;
+    outline: 0;
 }
 .group7 .input .col p{
     margin-bottom: 5px;
@@ -427,7 +442,13 @@ body{
     font-size: 25px;
     color: #2a3b40;
 }
-
+.group10 .media-icon li:hover{
+    background-color: red;
+    
+}
+.group10 .media-icon li:hover i{
+    color: #fff;
+}
 .group11 {
    background: #d4d8d9;
    /* height: 275px; */
@@ -478,4 +499,13 @@ body{
 }
 .group11 .bold li{
     font-weight: bold;
-}0
+}
+.smaller{
+    position: fixed;
+    top: 0px!important;
+    padding-top: 20px!important;
+    padding-bottom: 20px!important;
+    background: url(images/header.png);
+    z-index: 5;
+    width: 100%;
+}

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    
+
     <title>Frontend practice</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
@@ -11,13 +11,13 @@
 </head>
 
 <body>
-    <div class="group1 rong">
+    <div class="group1 rong" id=brunch>
         <ul class="nav">
-            <li><a href="#">Brunch</a></li>
-            <li class="right"><a href="#">Welcome</a></li>
-            <li class="right"><a href="#">Menu</a></li>
-            <li class="right"><a href="#">Events</a></li>
-            <li class="right"><a href="#">Contact</a></li>
+            <li><a href="#brunch" id="brunch_link">Brunch</a></li>
+            <li class="right"><a href="#welcome" id="welcome_link">Welcome</a></li>
+            <li class="right"><a href="#menu" id="menu_link">Menu</a></li>
+            <li class="right"><a href="#event" id="event_link">Events</a></li>
+            <li class="right"><a href="#contact" id="contact_link">Contact</a></li>
         </ul>
         <div class="text">
             <p class="title">Brunch</p>
@@ -65,7 +65,7 @@
         </div>
 
     </div>
-    <div class="group4 rong">
+    <div class="group4 rong" id="welcome">
         <div class="grid-container">
             <div class="grid-item1">
                 <h3>India</h3>
@@ -142,14 +142,32 @@
             <img src="images/vector2.png" alt="">
         </div>
         <div class="text">
-            <h3>Traditional cuisine made easy</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis, neque voluptatibus ad omnis
-                culpa ea impedit dolore voluptatem vitae, quisquam minus nemo est. Quia fuga animi adipisci voluptas
-                sapiente!</p>
+            <div class="mySlides">
+                <h3>Traditional cuisine made easy</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro reiciendis, neque voluptatibus ad
+                    omnis
+                    culpa ea impedit dolore voluptatem vitae, quisquam minus nemo est. Quia fuga animi adipisci voluptas
+                    sapiente!</p>
+            </div>
+            <div class="mySlides">
+                <h3>Lorem ipsum dolor sit ame</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima odit nihil, fuga, vitae suscipit
+                    maxime officiis doloremque quam, laboriosam sit rem deserunt itaque molestiae obcaecati non esse.
+                    Cum, voluptas. Quidem.</p>
+            </div>
+            <div class="mySlides">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet recusandae nam sapiente facere quae
+                    incidunt molestiae saepe esse ipsam rerum? Omnis aliquam necessitatibus perspiciatis neque
+                    consequatur quo aspernatur harum dolor?</p>
+            </div>
             <div class="icon">
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
-                <i class="fas fa-circle"></i>
+                <span class="dot" onclick="currentSlide(1)"><i class="fas fa-circle"></i></span>
+                <span class="dot" onclick="currentSlide(2)"><i class="fas fa-circle"></i></span>
+                <span class="dot" onclick="currentSlide(3)"><i class="fas fa-circle"></i></span>
+                
+                
+                
             </div>
             <div class="nav">
                 <ul>
@@ -161,7 +179,7 @@
             </div>
         </div>
     </div>
-    <div class="group6 rong">
+    <div class="group6 rong" id="menu">
         <div class="text">
             <div class="title">
                 <p>Discover</p>
@@ -249,7 +267,7 @@
                     <p>Email</p>
                     <input type="text" placeholder="Your email address" style="color: #fff; background: #2a3b40">
                     <br>
-                    <input type="submit" value="SUBMIT" style="color: #fff; background: #2a3b40">
+                    <input type="submit" value="SUBMIT" style="color: #fff; background: #2a3b40; width: 220px;">
                 </div>
                 <div class="col">
                     <p>Time</p>
@@ -264,7 +282,7 @@
     <div class="group8">
 
     </div>
-    <div class="group9 rong">
+    <div class="group9 rong" id="event">
         <div class="title">
             <p>Discover</p>
             <h3>Our new menu</h3>
@@ -323,7 +341,7 @@
             </ul>
         </div>
     </div>
-    <div class="group11 rong">
+    <div class="group11 rong" id="contact">
         <div class="col1">
             <h3>About</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo culpa deserunt earum dolorem quibusdam
@@ -353,6 +371,7 @@
             <li><a href="#">Goals</a></li>
         </div>
     </div>
+    <script src="1.js"></script>
 </body>
 
 </html>
