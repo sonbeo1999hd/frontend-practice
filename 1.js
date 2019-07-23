@@ -49,6 +49,8 @@ function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
+    // var x = document.getElementById('group5').scrollHeight; // 375
+
 
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
@@ -60,6 +62,8 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].className += " animated bounceInDown"
+    slides[slideIndex - 1].className += " animated bounceInDown "
     dots[slideIndex - 1].className += " active";
+
+
 }
