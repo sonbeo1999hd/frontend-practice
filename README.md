@@ -19,5 +19,5 @@ Thực hiện bởi [Nguyễn Ngọc Sơn](https://github.com/sonbeo1999hd)
 - Củng cố kiến thức HTNL/CSS/JS
 
 - Tạo 1 trang html cơ bản từ PSD, không Responsive
-- Thêm một số hiệu ứng bằng js
+- Thêm một số hiệu ứng bằng js: load tới phần tương ứng khi click vào navbar
 
