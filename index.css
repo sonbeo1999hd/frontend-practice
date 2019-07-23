@@ -3,6 +3,10 @@
     margin: 0px;
 }
 
+.input .col select {
+    width: 220px!important;
+}
+
 .group1 .text button:hover {
     background: blue;
     color: white;
@@ -338,6 +342,8 @@ body{
     padding: 8px;
     outline: 0;
 }
+
+input[type="date"] {}
 .group7 .input .col p{
     margin-bottom: 5px;
 }

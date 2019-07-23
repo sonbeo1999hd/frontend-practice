@@ -64,6 +64,65 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     slides[slideIndex - 1].className += " animated bounceInDown "
     dots[slideIndex - 1].className += " active";
+}
 
+// validation name, phone, email
+var inputs = document.querySelectorAll('.col input');
+function borderRed(i) {
 
+    inputs[i].style.borderColor = "red";
+
+}
+function checkName() {
+    var name = inputs[0].value;
+    if (name == "") {
+        alert("Please enter your name!!!!");
+        return false;
+    }
+    return true;
+}
+function checkEmail() {
+    var email = inputs[2].value;
+    if (email == "") {
+        alert("Please enter your email");
+        return false;
+    } else if ((/\S+@\S+\.\S+/).test(email) == false) {
+        alert("Your email is not invalid");
+        return false;
+    }
+    return true;
+}
+function checkPhone() {
+    var phone = inputs[5].value;
+    if (phone == "") {
+        alert("Please enter your phone number");
+        return false;
+    }
+    else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
+        alert("Your phone number is not invalid");
+        return false;
+    }
+    return true;
+}
+// function checkDate(){
+//     var date = inputs[2].value;
+//     alert(date);
+// }
+function validation() {
+    let check_Name = checkName();
+    let check_Mail = checkEmail();
+    let check_Phone = checkPhone();
+    for (let i = 0; i < inputs.length; i++) {
+        inputs[i].style.borderColor = "#fff";
+    }
+
+    if (check_Name == false) {
+        borderRed(0);
+    }
+    if (check_Mail == false) {
+        borderRed(2);
+    }
+    if(check_Phone == false){
+        borderRed(5);
+    }
 }
