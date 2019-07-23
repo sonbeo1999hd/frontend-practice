@@ -56,13 +56,13 @@ function showSlides(n) {
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
-        slides[i].className = slides[i].className.replace(" animated bounceInDown", "");
+        slides[i].className = slides[i].className.replace(" animated bounceInLeft", "");
     }
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
     slides[slideIndex - 1].style.display = "block";
-    slides[slideIndex - 1].className += " animated bounceInDown "
+    slides[slideIndex - 1].className += " animated bounceInLeft "
     dots[slideIndex - 1].className += " active";
 }
 
@@ -73,56 +73,70 @@ function borderRed(i) {
     inputs[i].style.borderColor = "red";
 
 }
-function checkName() {
-    var name = inputs[0].value;
-    if (name == "") {
-        alert("Please enter your name!!!!");
-        return false;
-    }
-    return true;
-}
-function checkEmail() {
-    var email = inputs[2].value;
-    if (email == "") {
-        alert("Please enter your email");
-        return false;
-    } else if ((/\S+@\S+\.\S+/).test(email) == false) {
-        alert("Your email is not invalid");
-        return false;
-    }
-    return true;
-}
-function checkPhone() {
-    var phone = inputs[5].value;
-    if (phone == "") {
-        alert("Please enter your phone number");
-        return false;
-    }
-    else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
-        alert("Your phone number is not invalid");
-        return false;
-    }
-    return true;
-}
+// function checkName() {
+//     var name = inputs[0].value;
+//     if (name == "") {
+//         alert("Please enter your name!!!!");
+//         return false;
+//     }
+//     return true;
+// }
+// function checkEmail() {
+//     var email = inputs[2].value;
+//     if (email == "") {
+//         alert("Please enter your email");
+//         return false;
+//     } else if ((/\S+@\S+\.\S+/).test(email) == false) {
+//         alert("Your email is not invalid");
+//         return false;
+//     }
+//     return true;
+// }
+// function checkPhone() {
+//     var phone = inputs[5].value;
+//     if (phone == "") {
+//         alert("Please enter your phone number");
+//         return false;
+//     }
+//     else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
+//         alert("Your phone number is not invalid");
+//         return false;
+//     }
+//     return true;
+// }
 // function checkDate(){
 //     var date = inputs[2].value;
 //     alert(date);
 // }
 function validation() {
-    let check_Name = checkName();
-    let check_Mail = checkEmail();
-    let check_Phone = checkPhone();
+    var name = inputs[0].value;
+    var email = inputs[2].value;
+    var phone = inputs[5].value;
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].style.borderColor = "#fff";
     }
-
-    if (check_Name == false) {
+    if (name == "") {
+        alert("Please enter your name!!!!");
         borderRed(0);
     }
-    if (check_Mail == false) {
-        borderRed(2);
+    else{
+        if (email == "") {
+            alert("Please enter your email");
+            borderRed(2);
+        } else if ((/\S+@\S+\.\S+/).test(email) == false) {
+            alert("Your email is not invalid");
+            borderRed(2);
+        }
+        else{
+            if (phone == "") {
+                alert("Please enter your phone number");
+                borderRed(5);
+            }
+            else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
+                alert("Your phone number is not invalid");
+                borderRed(5);
+            }
+        }
     }
-    if(check_Phone == false){
-        borderRed(5);
-    }
+    
 }
