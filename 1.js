@@ -21,22 +21,29 @@ window.addEventListener('scroll', function () {
 
 // scroll smooth when click on navbar 
 
-var link = document.querySelectorAll('.group1 .nav li a')
-// console.log(link);
-for (let i = 0; i < link.length; i++) {
-    link[i].addEventListener('click', function (e) {
-        let temp = link[i].getAttribute('href');
-        let target = document.querySelector(temp);
-        // console.log(target);
-        target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-        })
-        // history.pushState(null, null, temp)
-        e.preventDefault()
-    })
 
-}
+var menu_link = document.getElementById('menu_link');
+menu_link.addEventListener('click', function (e) {
+    let temp = menu_link.getAttribute('href');
+    let target = document.querySelector(temp);
+    target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+    history.pushState(null, null, temp)
+    e.preventDefault()
+    
+})
+window.addEventListener('scroll', function(){
+    var x = this.pageYOffset;
+    if(x >= 3762 && x <=4362 ){
+        this.document.getElementById('menu_link').classList.add('red');
+    }
+    else{
+        this.document.getElementById('menu_link').classList.remove('red');
+    }
+})
+
 
 // slide_show when click icon in group5
 var slideIndex = 1;
@@ -50,8 +57,6 @@ function showSlides(n) {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     // var x = document.getElementById('group5').scrollHeight; // 375
-
-
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
     for (i = 0; i < slides.length; i++) {
@@ -119,7 +124,7 @@ function validation() {
         alert("Please enter your name!!!!");
         borderRed(0);
     }
-    else{
+    else {
         if (email == "") {
             alert("Please enter your email");
             borderRed(2);
@@ -127,16 +132,16 @@ function validation() {
             alert("Your email is not invalid");
             borderRed(2);
         }
-        else{
+        else {
             if (phone == "") {
                 alert("Please enter your phone number");
                 borderRed(5);
             }
-            else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
+            else if ((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false) {
                 alert("Your phone number is not invalid");
                 borderRed(5);
             }
         }
     }
-    
+
 }
