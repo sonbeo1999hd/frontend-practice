@@ -36,7 +36,7 @@ menu_link.addEventListener('click', function (e) {
 })
 window.addEventListener('scroll', function(){
     var x = this.pageYOffset;
-    if(x >= 3762 && x <=4362 ){
+    if(x >= 3509 && x <=4362 ){
         this.document.getElementById('menu_link').classList.add('red');
     }
     else{
