@@ -1,7 +1,7 @@
 // paralax navbar
 
 var trangthai = false;
-var small_navbar = document.querySelector('.nav');
+var small_navbar = document.querySelector('.navbar');
 
 window.addEventListener('scroll', function () {
     if (this.window.pageYOffset > 120) {
@@ -24,25 +24,37 @@ window.addEventListener('scroll', function () {
 
 var menu_link = document.getElementById('menu_link');
 menu_link.addEventListener('click', function (e) {
+    
     let temp = menu_link.getAttribute('href');
     let target = document.querySelector(temp);
     target.scrollIntoView({
         behavior: 'smooth',
         block: 'start'
     })
-    history.pushState(null, null, temp)
-    e.preventDefault()
+    history.pushState(null, null, temp);
+    e.preventDefault();
     
 })
-window.addEventListener('scroll', function(){
+var list = document.querySelectorAll('.js-scroll-trigger');
+for(let i = 0; i<list.length; i++){
+    list[i].addEventListener('click', function(){
+        let collapse = document.getElementsByClassName('navbar-collapse')[0];
+        collapse.classList.remove('show');
+    })
+}
+
+window.addEventListener('scroll', function () {
     var x = this.pageYOffset;
-    if(x >= 3509 && x <=4362 ){
+    if (x >= 3509 && x <= 4362) {
         this.document.getElementById('menu_link').classList.add('red');
     }
-    else{
+    else {
         this.document.getElementById('menu_link').classList.remove('red');
     }
 })
+// close responsive menu when scroll trigger link is clicked
+
+
 
 
 // slide_show when click icon in group5
@@ -51,7 +63,6 @@ showSlides(slideIndex);
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
-
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
@@ -72,51 +83,16 @@ function showSlides(n) {
 }
 
 // validation name, phone, email
-var inputs = document.querySelectorAll('.col input');
+var inputs = document.querySelectorAll('.right-col input');
+
 function borderRed(i) {
-
     inputs[i].style.borderColor = "red";
-
 }
-// function checkName() {
-//     var name = inputs[0].value;
-//     if (name == "") {
-//         alert("Please enter your name!!!!");
-//         return false;
-//     }
-//     return true;
-// }
-// function checkEmail() {
-//     var email = inputs[2].value;
-//     if (email == "") {
-//         alert("Please enter your email");
-//         return false;
-//     } else if ((/\S+@\S+\.\S+/).test(email) == false) {
-//         alert("Your email is not invalid");
-//         return false;
-//     }
-//     return true;
-// }
-// function checkPhone() {
-//     var phone = inputs[5].value;
-//     if (phone == "") {
-//         alert("Please enter your phone number");
-//         return false;
-//     }
-//     else if((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false){
-//         alert("Your phone number is not invalid");
-//         return false;
-//     }
-//     return true;
-// }
-// function checkDate(){
-//     var date = inputs[2].value;
-//     alert(date);
-// }
+
 function validation() {
     var name = inputs[0].value;
-    var email = inputs[2].value;
-    var phone = inputs[5].value;
+    var email = inputs[1].value;
+    var phone = inputs[2].value;
     for (let i = 0; i < inputs.length; i++) {
         inputs[i].style.borderColor = "#fff";
     }
@@ -127,19 +103,19 @@ function validation() {
     else {
         if (email == "") {
             alert("Please enter your email");
-            borderRed(2);
+            borderRed(1);
         } else if ((/\S+@\S+\.\S+/).test(email) == false) {
             alert("Your email is not invalid");
-            borderRed(2);
+            borderRed(1);
         }
         else {
             if (phone == "") {
                 alert("Please enter your phone number");
-                borderRed(5);
+                borderRed(2);
             }
             else if ((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false) {
                 alert("Your phone number is not invalid");
-                borderRed(5);
+                borderRed(2);
             }
         }
     }
