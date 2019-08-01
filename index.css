@@ -61,25 +61,6 @@ a:hover {
     color: #fed136;
 }
 
-@media screen and (max-width: 992px) {
-    .group1 .navbar {
-        background: #36525d;
-        padding-top: 20px;
-        -webkit-transition:  0.3s ease-in-out;
-        transition: 0.3s ease-in-out;
-        border: none;
-
-    }
-    .group1 .navbar-brand {
-        -webkit-transition: all 0.3s;
-        transition: all 0.3s;
-    }
-    .smaller{
-        padding-top: 10px!important;
-        padding-bottom: 10px!important;
-    }
-}
-
 .group1 .content {
     text-align: center;
     margin-top: 110px;
@@ -90,33 +71,35 @@ a:hover {
 
 .group1 .content .text {
     background: #e6e3e396;
-    padding-top: 80px;
+    padding-top: 110px;
     padding-bottom: 100px;
 }
 
 .group1 .text p {
     font-family: 'Cookie Regular';
-    font-size: 80px;
+    font-size: 115px;
     color: #2c3a42;
 }
 
 .group1 .text h3 {
-    font-size: 80px;
+    font-size: 75px;
     color: #ad6c12;
     text-transform: uppercase;
-    font-weight: bold;
-    margin-top: 20px;
+    /* font-weight: bold; */
+    margin-top: -56px;
+    font-family: 'Raleway Bold';
 }
 
 .group1 .text button {
     font-weight: bold;
-    padding: 10px;
+    padding: 5px 35px;
     text-transform: uppercase;
     font-size: 42px;
-    margin-top: 50px;
+    margin-top: 0px;
     border: none;
     background: #fff;
     color: #26363a;
+    font-family: 'Raleway';
 }
 
 @media screen and (max-width: 576px) {
@@ -134,11 +117,11 @@ a:hover {
         font-size: 25px;
         margin-top: 30px;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .group1 .text h3 {
-        font-size: 65px;
+    .group3 {
+        padding-top: 10px;
+    }
+    .group3 .col1 {
+        padding: 10px 20px;
     }
 }
 
@@ -184,27 +167,6 @@ a:hover {
     font-size: 25px;
 }
 
-@media screen and (max-width: 768px) {
-    .group3 {
-        padding-bottom: 20px;
-    }
-    .group3 .col1 {
-        padding-bottom: 0px;
-    }
-    .group3 .icon, .group3 h3 {
-        padding-bottom: 15px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .group3 {
-        padding-top: 10px;
-    }
-    .group3 .col1 {
-        padding: 10px 20px;
-    }
-}
-
 .group4 {
     background: url(images/img9.png);
     background-size: cover;
@@ -223,17 +185,19 @@ a:hover {
     font-family: 'Cookie Regular';
     font-size: 70px;
     text-align: center;
-    font-weight: bold;
     padding-top: 10px;
+    color: #304751;
+    padding-top: 40px;
 }
 
 .group4 .title p {
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 48px;
     color: #ad6c12;
     text-align: center;
-    margin-top: -10px;
+    margin-top: -35px;
     font-family: 'Raleway';
+    /* font-weight: 500!important; */
 }
 
 .group4 .one-food {
@@ -268,66 +232,6 @@ a:hover {
     padding: 0px;
 }
 
-@media screen and (max-width: 1199px) {
-    .group4 .info-food {
-        padding-top: 20px!important;
-    }
-    .group4 .one-food .info-food h4 {
-        padding-bottom: 10px;
-        font-size: 18px;
-    }
-    .group4 .one-food .info-food p {
-        padding-bottom: 0px;
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 991px) {
-    .group4 .title h3 {
-        font-size: 50px;
-    }
-    .group4 .title p {
-        font-size: 30px;
-    }
-    .group4 .info-food {
-        padding: 0px!important;
-    }
-    .group4 .one-food .info-food h4 {
-        padding-top: 20px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .group4 .title {
-        margin-top: -30px!important;
-    }
-    .group4 .one-food {
-        margin-top: 20px;
-    }
-    .group4 .info-food h4 {
-        font-size: 20px!important;
-        padding-top: 20px!important;
-    }
-    .group4 .info-food p {
-        font-size: 20px!important;
-    }
-    .group4 .reverse .pic {
-        order: 1;
-    }
-    .group4 .reverse .info-food {
-        order: 2;
-    }
-}
-
-@media screen and (max-width: 435px) {
-    .group4 .one-food .info-food p {
-        display: none;
-    }
-    .group4 .one-food .info-food h4 {
-        padding-top: 40px!important;
-    }
-}
-
 .group5 {
     background: #d4d8d9;
     position: relative;
@@ -345,18 +249,18 @@ a:hover {
 
 .group5 .text {
     text-align: center;
-    padding-top: 45px;
+    padding-top: 80px;
     color: #2a3b40;
 }
 
 .group5 .text .icon {
     font-size: 30px;
     cursor: pointer;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .active, .group5 .text .icon i:hover {
-    color: #e2213a91;
+    color: #fed136;
 }
 
 .group5 .icon i {
@@ -385,48 +289,12 @@ a:hover {
 .group5 .text h3 {
     font-size: 26px;
     font-weight: bold;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
+
 .group5 .mySlides {
     display: none;
 }
-@media screen and (max-width: 474px){
-    .group5 .text p{
-        display: -webkit-box;
-        -webkit-line-clamp: 4;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        
-    }
-}
-@media screen and (max-width: 575px){
-    .group5 .text{
-        padding: 0px;
-    }
-    .group5 .text h3{
-        padding-bottom: 10px;
-        font-size: 20px;
-    }
-    .group5 .text .icon{
-        padding-top: 5px;
-    }
-}
-@media screen and (max-width: 767px){
-    .group5 .img{
-        display: none;
-    }
-    .group5 .text{
-        padding-top: 30px;
-    }
-    .group5 .text h3{
-        padding-bottom: 20px;
-    }
-    .group5 .text .icon{
-        padding-top: 5px;
-    }
-}
-
 
 .group6 {
     background: url(images/img10.png);
@@ -450,18 +318,19 @@ a:hover {
 
 .group6 .text .title {
     text-align: center;
-    padding: 15px;
+    padding: 30px 0px;
 }
 
 .group6 .text .title p {
     font-family: 'Cookie Regular';
-    font-size: 70px;
+    font-size: 100px;
 }
 
 .group6 .text .title h3 {
     text-transform: uppercase;
     font-size: 50px;
     color: #ad6c12;
+    margin-top: -60px;
 }
 
 .group6 .one-col {
@@ -491,74 +360,6 @@ a:hover {
     width: 100%;
     height: 33px;
     margin-top: 20px;
-}
-
-@media screen and (max-width: 991px) {
-    .group6 .one-col .icon {
-        padding: 9px;
-        border-radius: 50%;
-        background: #fff;
-        height: 56px;
-        width: 100%;
-    }
-    .group6 .one-col .icon img {
-        width: 100%;
-        height: 27px;
-        margin-top: 4px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .group6 .text {
-        height: 841px;
-    }
-    .group6 .text .title h3 {
-        font-size: 40px;
-        margin-top: -25px;
-        margin-top: -25px;
-        padding-bottom: 20px;
-    }
-    .group6 .text .title p {
-        font-size: 55px;
-    }
-    .group6 .one-col {
-        padding-bottom: 15px;
-    }
-    .group6 .one-col .icon img {
-        width: 100%;
-        margin-top: 4px;
-    }
-    .group6 .one-col .icon {
-        padding: 18px;
-        height: 75px;
-    }
-}
-
-@media screen and (max-width: 521px) {
-    .group6 .info-food p {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        font-size: 10px;
-    }
-    .group6 .one-col .info-food h4 {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 354px) {
-    .group6 .text .title p {
-        font-size: 40px;
-    }
-    .group6 .text .title h3 {
-        font-size: 30px;
-    }
-    .group6 .one-col .icon {
-        padding: 9px;
-        height: 53px;
-    }
 }
 
 .group7 .book-here {
@@ -598,26 +399,6 @@ a:hover {
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 991px) {
-    .group7 .left-col, .group7 .right-col {
-        padding-left: 0px;
-    }
-    .group7 .submit {
-        padding-left: 10px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .group7 .left-col, .group7 .right-col, .group7 .submit {
-        margin-left: auto!important;
-        margin-right: auto!important;
-        text-align: center;
-    }
-    .group7 .submit {
-        padding-left: 2px;
-    }
-}
-
 .group8 img {
     width: 100%;
 }
@@ -649,13 +430,14 @@ a:hover {
 
 .group8 .title p {
     font-family: 'Cookie Regular';
-    font-size: 70px;
+    font-size: 100px;
 }
 
 .group8 .title h3 {
     text-transform: uppercase;
     font-size: 50px;
     color: #ad6c12;
+    margin-top: -60px;
 }
 
 .group8 .one-col .text {
@@ -685,45 +467,6 @@ a:hover {
     color: #555555;
     text-decoration: none;
     display: -webkit-inline-block;
-}
-@media screen and (max-width: 991px) {
-    .group8 .one-col .text .read-more {
-        font-size: 13px;
-        margin-top: 0px;
-    }
-    .group8 .text p {
-        font-size: 13px;
-    }
-    .group8 .one-col .text .name {
-        font-size: 15px;
-        padding-bottom: 8px;
-    }
-    .group8 .one-col .text .time {
-        padding-top: 0px;
-        font-size: 15px;
-    }
-    .group8 .title h3 {
-        font-size: 40px;
-        margin-top: -20px;
-    }
-    .group8 .title p {
-        font-size: 60px;
-    }
-    .group8 .title {
-        padding: 6px;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .group8 .one-col {
-        padding-bottom: 20px;
-    }
-}
-
-@media screen and (max-width: 468px) {
-    .group8 .one-col .text p {
-        display: none;
-    }
 }
 
 .group9 {
@@ -779,12 +522,6 @@ a:hover {
     color: #fff;
 }
 
-@media screen and (max-width: 575px) {
-    .group9 .text {
-        padding: 0px 10px;
-    }
-}
-
 .group10 {
     width: 100%;
     background: #d4d8d9;
@@ -831,11 +568,6 @@ a:hover {
     color: #2d2f2a;
 }
 
-@media screen and (max-width: 767px) {
-    .group10 .right {
-        margin: 15px auto!important;
-    }
-}
 .smaller {
     padding-top: 10px!important;
     padding-bottom: 10px!important;
@@ -845,3 +577,504 @@ a:hover {
     position: fixed!important;
 }
 
+@media screen and (max-width: 1199px) {
+    .group4 .info-food {
+        padding-top: 20px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .group4 .one-food .info-food p {
+        padding-bottom: 0px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .group4 .title h3 {
+        font-size: 50px;
+    }
+    .group4 .title p {
+        font-size: 30px;
+    }
+    .group4 .info-food {
+        padding: 0px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 20px;
+    }
+    .group8 .one-col .text .read-more {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    .group8 .text p {
+        font-size: 13px;
+    }
+    .group8 .one-col .text .name {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+    .group8 .one-col .text .time {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+    .group8 .title h3 {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    .group8 .title p {
+        font-size: 60px;
+    }
+    .group8 .title {
+        padding: 6px;
+    }
+    .group7 .left-col, .group7 .right-col {
+        padding-left: 0px;
+    }
+    .group7 .submit {
+        padding-left: 10px;
+    }
+    .group6 .one-col .icon {
+        padding: 9px;
+        border-radius: 50%;
+        background: #fff;
+        height: 56px;
+        width: 100%;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        height: 27px;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .group4 .title {
+        margin-top: -30px!important;
+    }
+    .group4 .one-food {
+        margin-top: 20px;
+    }
+    .group4 .info-food h4 {
+        font-size: 20px!important;
+        padding-top: 20px!important;
+    }
+    .group4 .info-food p {
+        font-size: 20px!important;
+    }
+    .group4 .reverse .pic {
+        order: 1;
+    }
+    .group4 .reverse .info-food {
+        order: 2;
+    }
+    .group5 .img {
+        display: none;
+    }
+    .group5 .text {
+        padding-top: 30px;
+    }
+    .group5 .text h3 {
+        padding-bottom: 20px;
+    }
+    .group5 .text .icon {
+        padding-top: 5px;
+    }
+    .group6 .text {
+        height: 841px;
+    }
+    .group6 .text .title h3 {
+        font-size: 40px;
+        margin-top: -25px;
+        margin-top: -25px;
+        padding-bottom: 20px;
+    }
+    .group6 .text .title p {
+        font-size: 55px;
+    }
+    .group6 .one-col {
+        padding-bottom: 15px;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        margin-top: 4px;
+    }
+    .group6 .one-col .icon {
+        padding: 18px;
+        height: 75px;
+    }
+    .group8 .one-col {
+        padding-bottom: 20px;
+    }
+    .group10 .right {
+        margin: 15px auto!important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .group4 .one-food .info-food p {
+        display: none;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 40px!important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .group4 .info-food {
+        padding-top: 20px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .group4 .one-food .info-food p {
+        padding-bottom: 0px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .group4 .title h3 {
+        font-size: 50px;
+    }
+    .group4 .title p {
+        font-size: 30px;
+    }
+    .group4 .info-food {
+        padding: 0px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 20px;
+    }
+    .group8 .one-col .text .read-more {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    .group8 .text p {
+        font-size: 13px;
+    }
+    .group8 .one-col .text .name {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+    .group8 .one-col .text .time {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+    .group8 .title h3 {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    .group8 .title p {
+        font-size: 60px;
+    }
+    .group8 .title {
+        padding: 6px;
+    }
+    .group7 .left-col, .group7 .right-col {
+        padding-left: 0px;
+    }
+    .group7 .submit {
+        padding-left: 10px;
+    }
+    .group6 .one-col .icon {
+        padding: 9px;
+        border-radius: 50%;
+        background: #fff;
+        height: 56px;
+        width: 100%;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        height: 27px;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .group4 .title {
+        margin-top: -30px!important;
+    }
+    .group4 .one-food {
+        margin-top: 20px;
+    }
+    .group4 .info-food h4 {
+        font-size: 20px!important;
+        padding-top: 20px!important;
+    }
+    .group4 .info-food p {
+        font-size: 20px!important;
+    }
+    .group4 .reverse .pic {
+        order: 1;
+    }
+    .group4 .reverse .info-food {
+        order: 2;
+    }
+    .group5 .img {
+        display: none;
+    }
+    .group5 .text {
+        padding-top: 30px;
+    }
+    .group5 .text h3 {
+        padding-bottom: 20px;
+    }
+    .group5 .text .icon {
+        padding-top: 5px;
+    }
+    .group6 .text {
+        height: 841px;
+    }
+    .group6 .text .title h3 {
+        font-size: 40px;
+        margin-top: -25px;
+        margin-top: -25px;
+        padding-bottom: 20px;
+    }
+    .group6 .text .title p {
+        font-size: 55px;
+    }
+    .group6 .one-col {
+        padding-bottom: 15px;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        margin-top: 4px;
+    }
+    .group6 .one-col .icon {
+        padding: 18px;
+        height: 75px;
+    }
+    .group8 .one-col {
+        padding-bottom: 20px;
+    }
+    .group10 .right {
+        margin: 15px auto!important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .group4 .one-food .info-food p {
+        display: none;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 40px!important;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .group4 .info-food {
+        padding-top: 20px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .group4 .one-food .info-food p {
+        padding-bottom: 0px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .group4 .title h3 {
+        font-size: 50px;
+    }
+    .group4 .title p {
+        font-size: 30px;
+    }
+    .group4 .info-food {
+        padding: 0px!important;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 20px;
+    }
+    .group8 .one-col .text .read-more {
+        font-size: 13px;
+        margin-top: 0px;
+    }
+    .group8 .text p {
+        font-size: 13px;
+    }
+    .group8 .one-col .text .name {
+        font-size: 15px;
+        padding-bottom: 8px;
+    }
+    .group8 .one-col .text .time {
+        padding-top: 0px;
+        font-size: 15px;
+    }
+    .group8 .title h3 {
+        font-size: 40px;
+        margin-top: -20px;
+    }
+    .group8 .title p {
+        font-size: 60px;
+    }
+    .group8 .title {
+        padding: 6px;
+    }
+    .group7 .left-col, .group7 .right-col {
+        padding-left: 0px;
+    }
+    .group7 .submit {
+        padding-left: 10px;
+    }
+    .group6 .one-col .icon {
+        padding: 9px;
+        border-radius: 50%;
+        background: #fff;
+        height: 56px;
+        width: 100%;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        height: 27px;
+        margin-top: 4px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .group4 .title {
+        margin-top: -30px!important;
+    }
+    .group4 .one-food {
+        margin-top: 20px;
+    }
+    .group4 .info-food h4 {
+        font-size: 20px!important;
+        padding-top: 20px!important;
+    }
+    .group4 .info-food p {
+        font-size: 20px!important;
+    }
+    .group4 .reverse .pic {
+        order: 1;
+    }
+    .group4 .reverse .info-food {
+        order: 2;
+    }
+    .group5 .img {
+        display: none;
+    }
+    .group5 .text {
+        padding-top: 30px;
+    }
+    .group5 .text h3 {
+        padding-bottom: 20px;
+    }
+    .group5 .text .icon {
+        padding-top: 5px;
+    }
+    .group6 .text {
+        height: 841px;
+    }
+    .group6 .text .title h3 {
+        font-size: 40px;
+        margin-top: -25px;
+        margin-top: -25px;
+        padding-bottom: 20px;
+    }
+    .group6 .text .title p {
+        font-size: 55px;
+    }
+    .group6 .one-col {
+        padding-bottom: 15px;
+    }
+    .group6 .one-col .icon img {
+        width: 100%;
+        margin-top: 4px;
+    }
+    .group6 .one-col .icon {
+        padding: 18px;
+        height: 75px;
+    }
+    .group8 .one-col {
+        padding-bottom: 20px;
+    }
+    .group10 .right {
+        margin: 15px auto!important;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .group4 .one-food .info-food p {
+        display: none;
+    }
+    .group4 .one-food .info-food h4 {
+        padding-top: 40px!important;
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .group6 .text .title p {
+        font-size: 40px;
+    }
+    .group6 .text .title h3 {
+        font-size: 30px;
+    }
+    .group6 .one-col .icon {
+        padding: 9px;
+        height: 53px;
+    }
+}
+
+@media screen and (max-width: 521px) {
+    .group6 .info-food p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 10px;
+    }
+    .group6 .one-col .info-food h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    .group5 .text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .group1 .text h3 {
+        font-size: 65px;
+    }
+    .group3 {
+        padding-bottom: 20px;
+    }
+    .group3 .col1 {
+        padding-bottom: 0px;
+    }
+    .group3 .icon, .group3 h3 {
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .group1 .navbar {
+        background: #36525d;
+        padding-top: 20px;
+        -webkit-transition: 0.3s ease-in-out;
+        transition: 0.3s ease-in-out;
+        border: none;
+    }
+    .group1 .navbar-brand {
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .smaller {
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
+    }
+}
