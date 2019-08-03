@@ -398,7 +398,11 @@ a:hover {
 .group7 .book-here p {
     margin-bottom: 5px;
 }
-
+.group7 .error{
+    color: red;
+    margin-top: -20px;
+    display: none;
+}
 .group8 img {
     width: 100%;
 }

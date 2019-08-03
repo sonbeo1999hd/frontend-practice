@@ -85,37 +85,47 @@ function showSlides(n) {
 // validation name, phone, email
 var inputs = document.querySelectorAll('.right-col input');
 
-function borderRed(i) {
-    inputs[i].style.borderColor = "red";
-}
-
 function validation() {
-    var name = inputs[0].value;
-    var email = inputs[1].value;
-    var phone = inputs[2].value;
-    for (let i = 0; i < inputs.length; i++) {
-        inputs[i].style.borderColor = "#fff";
-    }
-    if (name == "") {
-        alert("Please enter your name!!!!");
-        borderRed(0);
+    var name = document.querySelector("input[name='name']");
+    var email = document.querySelector("input[name='email']");
+    var phone = document.querySelector("input[name='phone']");
+    var name_value = name.value;
+    var email_value = email.value;
+    var phone_value = phone.value;
+
+    name.style.borderColor = "#fff";
+    email.style.borderColor = "#fff";
+    phone.style.borderColor = "#fff";
+    
+    if (name_value == "") {
+        document.querySelector('.error_name').style.display="block";
+        name.style.borderColor = "red";
     }
     else {
-        if (email == "") {
-            alert("Please enter your email");
-            borderRed(1);
-        } else if ((/\S+@\S+\.\S+/).test(email) == false) {
-            alert("Your email is not invalid");
-            borderRed(1);
+        document.querySelector('.error_name').style.display="none";
+        if (email_value == "") {
+            document.querySelector('.error_email1').style.display="block";
+            email.style.borderColor = "red";
+        } else if ((/\S+@\S+\.\S+/).test(email_value) == false) {
+            document.querySelector('.error_email1').style.display="none";
+            document.querySelector('.error_email2').style.display="block";
+            email.style.borderColor = "red";
         }
         else {
-            if (phone == "") {
-                alert("Please enter your phone number");
-                borderRed(2);
+            document.querySelector('.error_email2').style.display="none";
+            if (phone_value == "") {
+                document.querySelector('.error_phone1').style.display="block";
+                phone.style.borderColor = "red";
             }
-            else if ((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone) == false) {
-                alert("Your phone number is not invalid");
-                borderRed(2);
+            else if ((/((09|03|07|08|05)+([0-9]{8})\b)/g).test(phone_value) == false) {
+                document.querySelector('.error_phone1').style.display="none";
+                document.querySelector('.error_phone2').style.display="block";
+                phone.style.borderColor = "red";
+            }
+            else{
+                alert("Done!!!");
+                document.querySelector('.error_phone2').style.display="none";
+                
             }
         }
     }
