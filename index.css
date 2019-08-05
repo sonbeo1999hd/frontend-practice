@@ -181,6 +181,7 @@ a:hover {
 
 .group4 {
     background: url(images/img9.png);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -310,6 +311,7 @@ a:hover {
 
 .group6 {
     background: url(images/img10.png);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
