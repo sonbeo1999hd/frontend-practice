@@ -18,6 +18,7 @@ window.addEventListener('scroll', function () {
     }
 });
 
+// parallax image 
 
 // scroll smooth when click on navbar 
 

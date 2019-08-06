@@ -956,6 +956,9 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+    .group1 .home{
+        margin-left: 0px!important;
+    }
     .group4 .title {
         margin-top: -30px!important;
     }
@@ -1061,6 +1064,12 @@ a:hover {
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .group8 .one-col .text p {
+        display: none;
     }
 }
 
